@@ -21,9 +21,9 @@ public class BookController {
     /*查询全部书籍，并返回书籍展示界面*/
     @RequestMapping("/allBook")
     public String list(Model model){
-        List<Books> books = bookService.queryAllBooks();
+        List<Books> list = bookService.queryAllBooks();
 
-        model.addAttribute("list", books);
-        return "show";
+        model.addAttribute("list", list);
+        return "allBook";
     }
 }
