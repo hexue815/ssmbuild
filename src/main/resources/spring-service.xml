@@ -15,7 +15,7 @@
     <context:component-scan base-package="com.xue.service"/>
 
     <!--将所有业务类注入到spring，可以通过配置或者注解的方式-->
-    <bean id="bookService" class="com.xue.service.BookServiceImpl">
+    <bean id="bookServiceImpl" class="com.xue.service.BookServiceImpl">
         <property name="bookMapper" ref="bookMapper"/>
     </bean>
 
