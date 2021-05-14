@@ -29,16 +29,30 @@ public class BookController {
         return "allBook";
     }
 
-    @GetMapping("/queryBookById")
-    public String queryBookById(Model model, @RequestParam("id") int id){
-        Books book = bookService.queryBookById(id);
-        model.addAttribute("book", book);
-        return "getBookById";
+//    @GetMapping("/queryBookById")
+//    public String queryBookById(Model model, @RequestParam("id") int id){
+//        Books book = bookService.queryBookById(id);
+//        model.addAttribute("book", book);
+//        return "getBookById";
+//    }
+
+    /*跳转到增加书籍页面*/
+    @RequestMapping("/addBook")
+    public String addBook(){
+        return "addBookPage";
     }
+
+    @RequestMapping("/addBookHandling")
+    public String addBookHandling(Books book){
+        bookService.addBook(book);
+        return "redirect:/book/allBook";
+    }
+
+
 
     @RequestMapping("/deleteBook")
     public String deleteBook(@RequestParam("id") int id){
         bookService.deleteBookById(id);
-        return "redirect:/allBook";
+        return "redirect:/book/allBook";
     }
 }

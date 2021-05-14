@@ -12,6 +12,10 @@
     <title>书籍展示</title>
 </head>
 <body>
+    <div>
+        <a href="${pageContext.request.contextPath}/book/addBook">增加书籍</a>
+    </div>
+    <br>
    <table border="3">
        <tr>
            <td>书籍编号</td>
@@ -26,7 +30,7 @@
                <td>${book.bookCounts}</td>
                <td>${book.detail}</td>
                <td><a href="">更新</a></td>
-               <td><a href="/book/deleteBook?id=${book.bookId}">删除</a></td>
+               <td><a href="${pageContext.request.contextPath}/book/deleteBook?id=${book.bookId}">删除</a></td>
            </tr>
        </c:forEach>
    </table>

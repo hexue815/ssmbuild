@@ -21,17 +21,15 @@
         margin: 100px auto;
         text-align: center;
         line-height: 38px;
-        background: #00ff99;
+        background: #ff00aa;
       }
     </style>
   </head>
   <body>
   <h3>
-    <a href="${pageContext.request.contextPath}/book/allBook">1. 查询所有书籍</a><br>
+    <a href="${pageContext.request.contextPath}/book/allBook">查询所有书籍</a><br>
 
-    <a href="${pageContext.request.contextPath}/book/queryBookById">2. 根据id查询书籍: </a><input type="text" name="id" id="id">
-
-
+<%--    <a href="${pageContext.request.contextPath}/book/queryBookById">2. 根据id查询书籍</a>--%>
   </h3>
   </body>
 </html>

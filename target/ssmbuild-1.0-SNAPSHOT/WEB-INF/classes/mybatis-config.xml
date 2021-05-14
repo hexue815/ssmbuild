@@ -8,8 +8,8 @@
         <package name="com.xue.pojo"/>
     </typeAliases>
 
-<!--    <mappers>
-        <mapper class="com.xue.mapper.BookMapper"/>
-    </mappers>-->
+<!--    <mappers>-->
+<!--        <mapper class="com.xue.mapper.BookMapper"/>-->
+<!--    </mappers>-->
 
 </configuration>
