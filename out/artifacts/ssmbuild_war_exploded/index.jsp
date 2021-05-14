@@ -9,6 +9,21 @@
 <html>
   <head>
     <title>首页</title>
+    <style>
+      h3{
+        width: 180px;
+        height: 38px;
+      }
+      a{
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+        margin: 100px auto;
+        text-align: center;
+        line-height: 38px;
+        background: #00ff99;
+      }
+    </style>
   </head>
   <body>
   <h3>

@@ -6,6 +6,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="test" target="8" />
+      <module name="TestController" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>
