@@ -12,9 +12,9 @@
 </head>
 <body>
     <form action="${pageContext.request.contextPath}/book/addBookHandling" method="post">
-        <label>书籍名称</label> <input type="text" name="bookName"><br>
-        <label>书籍数量</label> <input type="text" name="bookCounts"><br>
-        <label>书籍详情</label> <input type="text" name="detail"><br>
+        <label>书籍名称</label> <input type="text" name="bookName" required><br>
+        <label>书籍数量</label> <input type="text" name="bookCounts" required><br>
+        <label>书籍详情</label> <input type="text" name="detail" required><br>
         <input type="submit" value="添加"/>
     </form>
 </body>

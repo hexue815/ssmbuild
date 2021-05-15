@@ -29,7 +29,7 @@
                <td>${book.bookName}</td>
                <td>${book.bookCounts}</td>
                <td>${book.detail}</td>
-               <td><a href="">更新</a></td>
+               <td><a href="${pageContext.request.contextPath}/book/updateBook?id=${book.bookId}">更新</a></td>
                <td><a href="${pageContext.request.contextPath}/book/deleteBook?id=${book.bookId}">删除</a></td>
            </tr>
        </c:forEach>
