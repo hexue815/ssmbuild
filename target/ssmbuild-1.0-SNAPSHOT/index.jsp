@@ -28,8 +28,7 @@
   <body>
   <h3>
     <a href="${pageContext.request.contextPath}/book/allBook">查询所有书籍</a><br>
-
-<%--    <a href="${pageContext.request.contextPath}/book/queryBookById">2. 根据id查询书籍</a>--%>
+    <a href="${pageContext.request.contextPath}/book/getBookById">根据id获取书籍</a>
   </h3>
   </body>
 </html>

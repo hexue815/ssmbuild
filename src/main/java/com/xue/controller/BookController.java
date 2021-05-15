@@ -1,5 +1,6 @@
 package com.xue.controller;
 
+import com.sun.org.apache.xpath.internal.operations.Mod;
 import com.xue.pojo.Books;
 import com.xue.service.BookService;
 import org.apache.ibatis.annotations.Param;
@@ -62,6 +63,20 @@ public class BookController {
         bookService.updateBook(book);
         return "redirect:/book/allBook";
     }
+
+    /*跳转到输入Id查询书籍页面*/
+    @RequestMapping("/getBookById")
+    public String getBookById(){
+        return "getBookByIdPage";
+    }
+    /*根据前端获取到的Id，查询书籍*/
+    @RequestMapping("/getBookById/getBook")
+    public String getBookById_getBokk(@RequestParam("bookId") int id, Model model){
+        Books book = bookService.queryBookById(id);
+        model.addAttribute("book", book);
+        return "showBookById";
+    }
+
 
 }
 
